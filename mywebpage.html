@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">             
+    <link rel="stylesheet" href="mywebpage.css">
+    <link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/db-eurothai-x-bold" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="mywebpage.js"></script>
+</head>
+<body>
+        <div class ="toolbars">
+            <a href="#"><img class="logo" src="imagess/logo.PNG" alt="Logo"/></a>
+            <ul class = "menubtn">
+                <li> <button>Producer</button> </li>
+                <li> <button>DJ</button>  </li>
+                <li> <button>Manager</button> </li>
+            </ul>
+        </div>
+    <section class = "firstpage">
+        <h1 class = "maintitle"> REISA  <br> MANAGEMENT </br></h1>
+
+        <div class="btns1">
+            <script>
+                let choosedjbtn = createbutton("SELECT DJ","btn_1")
+                let seereportsbtn = createbutton("SHOW STATS","btn_2")
+            </script>
+        </div>
+    </section>
+    <section class = "secondpage">
+        <h1 class =maintitle2> Choose your favorite dj </h1>
+        <div class="btns2">
+            <script>
+                
+                createbutton2("DJ BLAZE","odd","Fuses electronic beats with jazz melodies, creating unique musical experiences.","imagess/dj1.jpg")
+                createbutton2("DJ TOTOTE","even","Connects with the audience through hypnotic beats and ethereal sounds.","imagess/dj2.jpg")
+                createbutton2("DJ LUNA","odd","Master of techno, transforming any dance floor into an unforgettable, energetic party.","imagess/dj3.jpg")
+                createbutton2("DJ MAGNO","even","Remix specialist, blending genres to make crowds vibrate with excitement.","imagess/dj4.jpg")
+            </script>
+        </div>
+    </section>
+    <section class = "thirdpage">
+        <h1 class = "maintitle3">When is your dj killing it?</h1>
+            <section class = "body3">
+                <form class="calendar">
+                    <h2> Choose a date</h2>
+                    <label for="start">Choose a date:</label>
+                    <input type="date" id="start" name="date" required>
+                    <input type="submit" value="Submit" id="submit_btn">
+                </form>
+                <div>
+                    <table class = "time">
+                        <tr><th> <h2> Choose a time</h2></th></tr>
+                        <tr>
+                            <td><input type="submit" value="20:00-22:00"> </td>
+                            <td><input type="submit" value="22:00-24:00"> </td>
+                            <td><input type="submit" value="24:00-02:00"> </td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="02:00-04:00"> </td>
+                            <td><input type="submit" value="04:00-06:00"> </td>
+                            <td><input type="submit" value="06:00-08:00"> </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </section>
+        </section>
+    </section>
+    <section class = "forthpage">
+        <h1 class = "maintitle4">Reports Dj/producer</h1>
+        <div class="body4">
+            <section class = "songstable">
+                <table >
+                    <thead>
+                        <tr>
+                            <th>Songs</th>
+                            <th>Artist</th>
+                            <th>Year</th>
+                            <th>Played</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </section>
+            <section class = "songsimg">
+                <h2 id="artistname"> Artist -</h2>
+                <h3 id = "songname"> Song name -</h3>
+                <h3 id = "duration"> Duration -</h3>
+                <h3 id = "played"> Reproduced by the Dj -</h3>
+                <img src = "imagess/unknown.jpg">
+            </section>
+        </div>
+    </section>
+    
+</body>

@@ -1,0 +1,365 @@
+body{
+    background-image: url("imagess/pruebafondo.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: repeat; 
+}
+/*------------- HEADER ------------------*/
+.toolbars {
+    display:flex;
+    height: 100px;
+    border: 2px solid rgb(171, 169, 169);
+    align-items: center;
+    background-image: url("imagess/Banner2.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: repeat; 
+    border-radius: 4px;
+    width:100%;
+
+
+}
+.logo {height: 250px;
+width: auto}
+
+.menubtn {display:flex;
+list-style-type: none;
+color: azure;
+margin-left: 550px;
+font-size: 25px;
+font-family: 'DB EuroThai X Bold', sans-serif;
+margin-top: 50px;
+
+}
+
+.menubtn li{margin-right:100px ;
+    }
+.menubtn button{font-size: 19px;
+    background-color: transparent;
+    border: transparent;
+    font-family: 'Poppins';
+    color:aliceblue;}
+
+/*------------- 1 page ------------------*/
+
+.firstpage{display: flex;
+    flex-direction: row;}
+
+.maintitle{margin-top: 200px;
+    font-family: 'Gagalin', sans-serif;
+    font-size: 60px;
+    margin-left:60px}
+
+    
+.btns1 {margin-top: 150px;}
+    
+
+.btn1page {
+    display: flex; 
+    justify-content: flex-start; 
+    
+    flex-direction: column;
+    align-items: center;
+    
+    background-image: url("imagess/fondoboton.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+    border: none;
+    color: rgb(247, 241, 246);
+    font-family: 'Gagalin', sans-serif;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-left: 500px;
+    gap:50px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 400px;
+    height: 70px;}
+
+.btn1page:hover {
+    background-image: url("imagess/fondo_hover.png");
+    color:#333;
+    transform: scale(1.1); 
+    transition: transform 0.2s ease;
+}
+
+/*------------- 2 page ------------------*/
+
+.maintitle2 { font-size: 60px;
+text-align: center;
+font-family:'Gagalin', sans-serif ;
+margin-bottom: 10px;}
+
+.btns2 { margin-top: 100px;}
+.button-container_odd{
+    display: flex; 
+    flex-direction: column;
+    margin: 50px 150px; 
+    background-color: #fffffe;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);}
+
+
+
+.button-container_even{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 916px;
+    background-color: #f8f7f9;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);;
+
+}
+
+.button-container_even h2, .button-container_odd h2{font-size: 35px;
+    font-family:'Gagalin', sans-serif ;  }
+
+    .button-container_even p, .button-container_odd p{ font-size: 25px; 
+    font-family: 'Gagalin', sans-serif; 
+    width: 400px}
+
+.btn2pageodd, .btn2pageeven{
+    
+    
+    border: none;
+    color: transparent;
+    font-family: 'Gagalin', sans-serif;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border-width: 10px;
+    border-image-source: url('imagess/fondoboton.png');
+    border-style: solid; 
+    border-image-slice: 30; 
+    border-image-repeat: stretch; 
+    overflow: hidden;
+
+    width: 380px;
+    height: 150px;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    }
+
+
+    .button-container_even h2:hover, .button-container_odd h2:hover{
+        color: #7f2e86;
+    }
+
+        
+
+    
+     
+
+.secondpage {display: none}
+
+/*------------- 3 page ------------------*/
+
+.thirdpage {display: none}
+
+.maintitle3 {text-align: center;
+    margin-top: 40px;
+    font-family: 'Gagalin', sans-serif;
+    font-size:  40px;
+}
+
+.body3{
+    display:flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-top: 100px;
+    gap:400px;
+}
+
+.calendar {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-left: 100px;
+}
+
+.calendar h2 {
+    font-family: 'Gagalin', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.calendar label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.calendar input[type="date"] {
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.calendar input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="date"]:valid {
+    border: 2px solid #28a745; 
+}
+
+input[type="date"]:invalid {
+    border: 2px solid #dc3545; 
+}
+
+input[type="date"]:focus:invalid {
+    outline: none; 
+}
+.time {margin-top: 30px;}
+.time input:hover{
+        background-image: url("imagess/fondo_hover.png");
+        color:#333;
+        transform: scale(1.1); 
+        transition: transform 0.2s ease;
+}
+
+.time h2 {font-family: 'Gagalin', sans-serif; 
+    font-size: 24px;
+    width:200px}
+
+.time input{height:50px;
+    width:140px;
+    border-radius: 10px;
+    background-image: url("imagess/fondoboton.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border: 3px solid rgb(90, 86, 86);
+    font-family: 'Gagalin', sans-serif;
+    color: white;
+    font-size: 16px;
+    margin:10px
+    
+}
+
+/*------------- 4 page ------------------*/
+
+.forthpage {display: none}
+
+.maintitle4 {text-align: center;
+    margin-top: 40px;
+    font-family: 'Gagalin', sans-serif;
+    font-size:  40px;
+}
+
+.body4{ display:flex;
+flex-direction: row;
+gap:170px;}
+
+.songstable {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.songstable table {
+    width: 700px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.songstable th, .songstable td {
+    padding: 12px;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.songstable th {
+    background-color: #6a1b9a;
+    color: #ffffff;
+    font-family: 'Gagalin', sans-serif;
+    font-size: 18px;
+}
+
+.songstable td {
+    background-color: #f3e5f5;
+    color: #333;
+    font-size: 16px;
+}
+
+.songstable tr:nth-child(odd) td {
+    background-color: #a491a8;
+}
+
+.songstable tr:nth-child(even) td {
+    background-color: #d9d0da;
+}
+
+.songstable tr {
+    transition: transform 0.2s;
+}
+
+.songstable tr:hover {
+    background-color: #d1c4e9;
+    transform: scale(1.02);
+}
+
+.songstable th:first-child, .songstable td:first-child {
+    border-left: none;
+}
+
+.songstable th:last-child, .songstable td:last-child {
+    border-right: none;
+}
+
+.songstable tr:last-child td {
+    border-bottom: none;
+}
+
+.songstable tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.songsimg {margin-top: 30px;}
+.songsimg h2 {align-items: center;
+    font-family: 'Gagalin', sans-serif;
+    font-size: 30px;
+}
+.songsimg h3 {align-items: center;
+    font-family: 'Gagalin', sans-serif;
+    margin-top: 20px;
+}
+.songsimg img {width: 300px;
+    
+    border-radius: 15px;
+    height:auto;
+    }
